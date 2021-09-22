@@ -47,6 +47,7 @@ def method_name():
         Thread(target=runProg).start()
         # TODO ask how to avoid +1 coz its dangerous
         button.wait_for_inactive()
+        os.system('cat home/pi/Desktop/work/raspb-controller/main.py')
         str = os.popen('ps -aux | grep \'python3 /home/pi/Desktop/work/raspb-controller/main.py\'').read()
         str = str.split("\n")
         print(str)
